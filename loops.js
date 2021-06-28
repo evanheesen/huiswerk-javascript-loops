@@ -6,7 +6,9 @@
 // Hoera!
 // ==========================================
 
-
+for (let i = 0; i < 3; i++) {
+    console.log("Hoera!")
+}
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de vijfde loop het woord "klaar!"
@@ -18,7 +20,10 @@
 // klaar!
  // ==========================================
 
-
+for (let i = 0; i < 4; i++) {
+    console.log("loop...");
+}
+console.log("Klaar!")
 
 // ==========================================
 // Opdracht 3. Maak een for-loop die van 0 tot 15 loopt. Voor ieder getal wordt in de console gelogd of het getal even of oneven is.
@@ -32,8 +37,17 @@
 
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over..
 // ==========================================
+oddOrEven = "";
 
+for (let i = 0; i < 16; i++) {
+    if (i % 2 == 0) {
+        oddOrEven = "even";
+    } else {
+        oddOrEven = "oneven";
+    }
 
+    console.log(i + " is " +oddOrEven);
+}
 
 // ==========================================
 // [BONUSOPDRACHT] - optioneel: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -51,3 +65,13 @@
 // >> 9
 // ==========================================
 
+sign = "";
+
+for (let i = 0; i < 10; i++) {
+    if (i >= 3 && i < 6) {
+        sign = "> ";
+    } else if (i >= 6) {
+        sign = ">> ";
+    }
+    console.log(sign + i);
+}
